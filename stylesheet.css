@@ -222,7 +222,8 @@ p{
     justify-content: space-around;
     
 }
-.herotype div{
+ .herotype button{
+    border: none;
     height: 100%;
     cursor: pointer;
     display: flex;
@@ -235,7 +236,7 @@ p{
     font-weight: bold;
     color: white;
 }
-.herotype div:hover{
+.herotype button:hover{
     color: black;
 }
 .buyhero{
