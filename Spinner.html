@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="SpinnerStyle.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one" id="one">99 000🟡</div>
+        <div class="two" id="two">119 000🟡</div>
+        <div class="three" id="three">99💎</div>
+        <div class="four" id="four">32 000🟡</div>
+        <div class="five" id="five">15 000🟡</div>
+        <div class="six" id="six">499💎</div>
+    </div>
+    <span class="mid-item"></span>
+    <button id="spin">Spin</button>
+    <div class="stopper"></div>
+    <script>
+        sessionStorage.setItem("sale_amount",0);
+        let container = document.querySelector(".container");
+        let btn = document.getElementById("spin");
+        
+        btn.onclick = function () {
+            var a="90%",b="80%",c="50",d="30%",e="10%",f="0%";
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=a;
+            },100);
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=b;
+            },300);
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=c;
+            },500);
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=d;
+            },700);
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=e;
+            },900);
+            setTimeout(()=>{
+            document.getElementById("spin").style.opacity=f;
+            },1100);
+            setTimeout(()=>{
+            document.getElementById("spin").style.display="none";
+            },1400);
+            // container.style.transform="rotate(124deg)";
+            var number = parseInt(Math.random() * 10000);
+            var round = 360 * 5 + number;
+            number = number % 360;
+            container.style.transform = "rotate(" + round + "deg)";
+            btn.disabled = true;
+                if (number <= 30 || number >= 330){
+                    
+                    window.parent.postMessage(99000, "*");}
+                if (number > 30 && number <= 90){
+                
+                window.parent.postMessage(499, "*");}
+                if (number > 90 && number <= 150){
+                
+                window.parent.postMessage(15000, "*");}
+                if (number > 150 && number <= 210){
+                
+                window.parent.postMessage(32000, "*");}
+                if (number > 210 && number < 270){
+                
+                window.parent.postMessage(99, "*");}
+                if (number > 270 && number < 330){
+                
+                window.parent.postMessage(119000, "*");}
+            
+        }
+
+    </script>
+</body>
+
+</html>

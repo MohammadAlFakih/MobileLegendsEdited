@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    margin: 100px auto 0;
+    background: #fff;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 2s;
+    transform-style:preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.front {
+    background: url("contactbackround.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.front h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 80px;
+    background-image: linear-gradient(to left, white, rgb(225, 165, 1));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.back {
+    background: linear-gradient(110deg,rgb(50, 82, 199) 30%,rgb(202, 246, 255) 70%);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profile img{
+    border-radius: 40px;
+}
+.profile h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bio{
+    margin-bottom: 40px;
+}
+.bio p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+}
+td{
+    align-items: center;
+    text-align: center;
+}
+.top{
+    font-size: 23px;
+    font-weight: bold;
+}
+table{
+    border: none;
+}
+.buttons{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

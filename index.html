@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Mobile Legends</h1><img src="logo.png">
+        </div>
+        <nav>
+            <input type="text" readonly value="0 💎" id="gems">
+            <input type="text" readonly value="0 🟡" id="coins">
+            <a href="#home">Home</a>
+            <a href="#hero">Hero</a>
+            <a href="#followuss">Follow us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <h1>Welcome to Mobile Legend<br>Bang Bang</h1>
+            <div>
+                <button
+                    onclick="location.href='https://www.bluestacks.com/apps/strategy/mobile-legends-bang-bang-on-pc.html'">Download</button>
+                <button onclick="(() => alert(' Please Download ML first!'))()">Play</button>
+            </div>
+
+        </section>
+        <div>
+        <section class="aboutus">
+            <img src="left-removebg-preview.png">
+            <div class="center">
+                <div class="div">What is Mobile Legends</div>
+                <p>Mobile Legends: Bang Bang is a mobile multiplayer online battle arena (MOBA) game developed<br>
+                    and published by Moonton, a subsidiary of ByteDance.<br>
+                    Released in 2016, the game grew in popularity; most prominently in Southeast Asia.</p>
+            </div>
+            <img src="right-removebg-preview.png">
+        </section>
+        <hr>
+        <section class="spinner">
+            <h1 id="spinandwin">Elon Musk decided to give you a gift<br>Touch Elon !!</h1>
+            <h1 id="oops" style="display: none; padding: 0px;">Oops that was for only one time<br>🤭</h1>
+            <img src="elon musk.jpg" width="500px" height="auto" onclick="spin()" id="elon">
+            <iframe src="Spinner.html" scrolling="no" id="spinner"></iframe>
+
+        </section></div>
+        <section class="hero" id="hero">
+            <div class="herotype">
+                <div onclick="f(0)">Assasin <img src="assasin-removebg-preview-removebg-preview.png" width="40px"
+                        height="auto"></div>
+                <div onclick="f(1)">Marksman <img src="marksman-removebg-preview.png" width="40px" height="auto">
+                </div>
+                <div onclick="f(2)">Mage <img src="mage-removebg-preview.png" width="40px" height="auto"></div>
+                <div onclick="f(3)">Tank <img src="tank.png" width="40px" height="auto"></div>
+                <div onclick="f(4)">Fighter <img src="fighter.png" width="40px" height="auto"></div>
+            </div>
+            <div class="buyhero">
+                <video autoplay muted loop id="myVideo">
+                    <source src="MOBILE LEGENDS FANNY INTRO!_Full-HD_1.mp4" type="video/mp4">
+                </video>
+                <div class="type">
+                    <div>
+                        <img src="fanny.jpg" class="choos">
+                        <span>Fanny</span>
+                        <button onclick="effect(0)">32 000 🟡</button>
+                    </div>
+                    <div><img src="saber.jpg" class="choos">
+                        <span>Saber</span>
+                        <button onclick="effect(1)">10 000 🟡</button>
+                    </div>
+                    <div><img src="natalia.jpg" class="choos">
+                        <span>Natalia</span>
+                        <button onclick="effect(2)">14 000 🟡</button>
+                    </div>
+                    <div><img src="amoun.jpg" class="choos">
+                        <span>Amoun</span>
+                        <button onclick="effect(3)">32 000 🟡</button>
+                    </div>
+                    <div><img src="gusion.jpg" class="choos">
+                        <span>Gusion</span>
+                        <button onclick="effect(4)">299 💎</button>
+                    </div>
+                    <div><img src="roger.jpg" class="choos">
+                        <span>Roger</span>
+                        <button onclick="effect(5)">24 000 🟡</button>
+                    </div>
+                </div>
+                <div class="type">
+                    <div>
+                        <img src="layla.jpg" class="choos">
+                        <span>Layla</span>
+                        <button onclick="effect(6)">24 000 🟡</button>
+                    </div>
+                    <div><img src="Mia.jpg" class="choos">
+                        <span>Mia</span>
+                        <button onclick="effect(7)">15 000 🟡</button>
+                    </div>
+                    <div><img src="clint.jpg" class="choos">
+                        <span>Clint</span>
+                        <button onclick="effect(8)">32 000 🟡</button>
+                    </div>
+                    <div><img src="kimmy.jpg" class="choos">
+                        <span>Kimmy</span>
+                        <button onclick="effect(8)">159 💎</button>
+                    </div>
+
+                </div>
+                <div class="type">
+                    <div>
+                        <img src="kaguara.jpg" class="choos">
+                        <span>Kaguara</span>
+                        <button onclick="effect(10)">32 000 🟡</button>
+                    </div>
+                    <div><img src="vale.png" class="choos">
+                        <span>Vale</span>
+                        <button onclick="effect(11)">14 000 🟡</button>
+                    </div>
+                    <div><img src="valentina.jpg" class="choos">
+                        <span>Valentina</span>
+                        <button onclick="effect(12)">299 💎</button>
+                    </div>
+                    <div><img src="eudora.jpg" class="choos">
+                        <span>Eudora</span>
+                        <button onclick="effect(13)">Free</button>
+                    </div>
+                    <div><img src="valir.jpg" class="choos">
+                        <span>Valir</span>
+                        <button onclick="effect(14)">24 000 🟡</button>
+                    </div>
+
+                </div>
+                <div class="type">
+                    <div>
+                        <img src="tigreal.jpg" class="choos">
+                        <span>Tigreal</span>
+                        <button onclick="effect(15)">32 000 🟡</button>
+                    </div>
+                    <div><img src="atlas.jpg" class="choos">
+                        <span>Atlas</span>
+                        <button onclick="effect(16)">32 000 🟡</button>
+                    </div>
+                    <div><img src="khufra.jpg" class="choos">
+                        <span>Khufra</span>
+                        <button onclick="effect(17)">Comming Soon</button>
+                    </div>
+                    <div><img src="lolita.jpg" class="choos">
+                        <span>Lolita</span>
+                        <button onclick="effect(18)">32 000 🟡</button>
+                    </div>
+                    <div><img src="akai.jpg" class="choos">
+                        <span>Akai</span>
+                        <button onclick="effect(19)">99 💎</button>
+                    </div>
+                    <div><img src="belerick.jpg" class="choos">
+                        <span>Belerick</span>
+                        <button onclick="effect(20)">24 000 🟡</button>
+                    </div>
+                </div>
+                <div class="type">
+                    <div>
+                        <img src="paquito.jpg" class="choos">
+                        <span>Paquito</span>
+                        <button onclick="effect(21)">9999999 🟡</button>
+                    </div>
+                    <div><img src="badang.jpg" class="choos">
+                        <span>Badang</span>
+                        <button onclick="effect(22)">32 000 🟡</button>
+                    </div>
+                    <div><img src="chou.jpg" class="choos">
+                        <span>Chou</span>
+                        <button onclick="effect(23)">24 000 🟡</button>
+                    </div>
+                    <div><img src="yuzong.jpg" class="choos">
+                        <span>Yu Zong</span>
+                        <button onclick="effect(24)">599 💎</button>
+                    </div>
+                </div>
+                <div id="strt">Choose your main Hero<br>by clicking on one<br>of this five categories!!!</div>
+            </div>
+        </section>
+    </main>
+    <footer id="followuss">
+        <div class="ifr"><iframe src="hoverindex.html" scrolling="no"></iframe></div>
+        <img src="grock.jpg">
+        
+    </footer>
+    <marquee scrollamount="40">
+        <div class="hello">JOHNSON IS HERE!!!</div>
+        <img src="jhonson.png" class="test"></marquee>
+        <div class="copyright">&copy; 2023 Mobile Legends. All rights are reserved</div>
+    
+    <script>
+        function f(i) {
+            document.getElementById("strt").style.display = "none";
+            var x = document.getElementsByClassName("type");
+            for (var j = 0; j < x.length; j++) {
+                if (j != i)
+                    x[j].style.display = "none";
+                else
+                    x[j].style.display = "grid";
+            }
+        }
+        function effect(i) {
+            document.getElementsByClassName("choos")[i].setAttribute("class", "animation");
+            for (var k = 0; k < document.getElementsByTagName("button").length; k++)
+                document.getElementsByTagName("button")[k].disabled = true;
+            setTimeout(() => {
+                document.getElementsByClassName("animation")[0].setAttribute("class", "choos");
+                for (var k = 0; k < document.getElementsByTagName("button").length; k++)
+                    document.getElementsByTagName("button")[k].disabled = false;
+            }, 2000);
+            setTimeout(() => {
+                document.getElementsByClassName("type")[0].style.display = "none";
+                document.getElementById("myVideo").style.display = "block";
+                document.getElementById("myVideo").play();
+            }, 3000);
+            setTimeout(() => {
+                document.getElementsByClassName("type")[0].style.display = "grid";
+                document.getElementById("myVideo").style.display = "none";
+
+            }, 16000)
+        }
+        /*  spinner   */
+        function spin() {
+            document.getElementById("elon").style.display = "none";
+            document.getElementById("spinner").style.display = "block";
+            document.getElementById("spinandwin").innerHTML = "SPIN TO WIN";
+            document.getElementById("spinandwin").style.fontSize = "50px";
+            document.getElementById("spinandwin").setAttribute("class", "spintowin");
+        }
+        window.addEventListener('message', function (event) {
+            var amount = event.data;
+            if (amount == 99000 || amount == 119000 || amount == 32000 || amount == 15000) {
+                setTimeout(() => {
+                    document.getElementById("coins").value = amount + " 🟡";
+                }, 5000);
+            }
+            else {
+                setTimeout(() => {
+                    document.getElementById("gems").value = amount + " 💎";
+                }, 5000);
+            }
+            setTimeout(() => {
+                document.getElementById("oops").style.display = "block";
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
