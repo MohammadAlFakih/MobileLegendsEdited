@@ -53,13 +53,13 @@
         </section></div>
         <section class="hero" id="hero">
             <div class="herotype">
-                <div onclick="f(0)">Assasin <img src="assasin-removebg-preview-removebg-preview.png" width="40px"
-                        height="auto"></div>
-                <div onclick="f(1)">Marksman <img src="marksman-removebg-preview.png" width="40px" height="auto">
-                </div>
-                <div onclick="f(2)">Mage <img src="mage-removebg-preview.png" width="40px" height="auto"></div>
-                <div onclick="f(3)">Tank <img src="tank.png" width="40px" height="auto"></div>
-                <div onclick="f(4)">Fighter <img src="fighter.png" width="40px" height="auto"></div>
+                <button onclick="f(0)">Assasin <img src="assasin-removebg-preview-removebg-preview.png" width="40px"
+                        height="auto"></button>
+                <button onclick="f(1)">Marksman <img src="marksman-removebg-preview.png" width="40px" height="auto">
+                </button>
+                <button onclick="f(2)">Mage <img src="mage-removebg-preview.png" width="40px" height="auto"></button>
+                <button onclick="f(3)">Tank <img src="tank.png" width="40px" height="auto"></button>
+                <button onclick="f(4)">Fighter <img src="fighter.png" width="40px" height="auto"></button>
             </div>
             <div class="buyhero">
                 <video autoplay muted loop id="myVideo">
@@ -213,9 +213,10 @@
                 document.getElementsByTagName("button")[k].disabled = true;
             setTimeout(() => {
                 document.getElementsByClassName("animation")[0].setAttribute("class", "choos");
-                for (var k = 0; k < document.getElementsByTagName("button").length; k++)
-                    document.getElementsByTagName("button")[k].disabled = false;
+                if(i!=0){for (var k = 0; k < document.getElementsByTagName("button").length; k++)
+                    document.getElementsByTagName("button")[k].disabled = false;}
             }, 2000);
+            if(i==0){
             setTimeout(() => {
                 document.getElementsByClassName("type")[0].style.display = "none";
                 document.getElementById("myVideo").style.display = "block";
@@ -224,9 +225,11 @@
             setTimeout(() => {
                 document.getElementsByClassName("type")[0].style.display = "grid";
                 document.getElementById("myVideo").style.display = "none";
-
-            }, 16000)
+                for (var k = 0; k < document.getElementsByTagName("button").length; k++)
+                    document.getElementsByTagName("button")[k].disabled = false;
+            }, 16000);
         }
+    }
         /*  spinner   */
         function spin() {
             document.getElementById("elon").style.display = "none";
